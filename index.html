@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;700&family=Montserrat:wght@100;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Sanchez&display=swap"
       rel="stylesheet"
     />
 
@@ -19,7 +19,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- JS & jQuery -->
     <script
@@ -34,46 +38,62 @@
     ></script>
   </head>
   <body>
-    <div id="content">
-      <!-- Navigation -->
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <img src="#" alt="Sebastian Ballen's Logo" /> Sebastian Ballen
-            </a>
-          </div>
-          <div class="navbar-main">
-            <ul>
-              <li>
-                <a class="page-scroll" href="#about">About</a>
+    <section class="colored-section" id="title">
+      <div class="container-fluid">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="images/logoFV1.PNG" alt="Sebastian Ballen's Logo" />
+            Sebastian Ballen
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">About</a>
               </li>
-              <li>
-                <a class="page-scroll "href="#services">Passion</a>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Passion</a>
               </li>
-              <li>
-                <a class="page-scroll" href="#experience">Experience</a>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#experience"
+                  >Experience</a
+                >
               </li>
-              <li>
-                <a class="page-scroll" href="#portfolio">Work</a>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#portfolio">Work</a>
               </li>
-              <li>
-                <a class="page-scroll" href="#contact">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
+        </nav>
+        <!-- Title -->
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="intro" class="intro">
+      <div class="overlay">
+        <div class="intro-content">
+          <h1 class="animated fadeInDown">Hi, I'm Sebastian</h1>
+          <p class="subtitle animated fadeInUp">
+            Web Developer & Digital Design Enthusiast
+          </p>
+          <a class="page-scroll" href="#about"></a>
         </div>
-      </nav>
-      <!-- Introduction -->
-      <section id="intro" class="intro">
-        <div class="overlay">
-          <div class="intro-content">
-            <h1 class="animated fadeInDown">Hi, I'm Sebastian</h1>
-            <p class="subtitle animated fadeInUp">Web Developer & Digital Design Enthusiast</p>
-            <a class="page-scroll" href="#about"></a>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

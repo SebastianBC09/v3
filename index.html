@@ -44,63 +44,65 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <section class="colored-section" id="title">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="page-top">
+      <a class="navbar-brand" href="#">
+        <img src="images/logoFV1.PNG" alt="Sebastian Ballen's Logo" />
+        Sebastian Ballen
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Passion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Title -->
+    <section class="title-section" id="title">
       <div class="container-fluid">
-        <!-- Navigation -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-          <a class="navbar-brand" href="#">
-            <img src="images/logoFV1.PNG" alt="Sebastian Ballen's Logo" />
-            Sebastian Ballen
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Passion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- Title -->
         <div class="row">
-          <div class="main-title col-lg-12">
-            <h1 class="main-heading animate__animated animate__fadeInDown">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 class="main-title animate__animated animate__fadeInDown">
               Hi, I'm Sebastian
             </h1>
-            <p class="main-subheading animate__animated animate__fadeInUp">
+            <p class="main-subtitle animate__animated animate__fadeInUp">
               Web Developer & Digital Design Enthusiast
             </p>
-            <a href="#about"><i class="fas fa-angle-down fa-4x icon"></i></a>
+            <a href="#about"><i class="fas fa-angle-down fa-4x title-icon"></i></a>
           </div>
         </div>
       </div>
     </section>
     <!-- About Me -->
-    <section class="white-section" id="about">
+    <section class="about-section" id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
@@ -108,7 +110,7 @@
             <img
               src="images/Crop Photo LinkedIn.jpg"
               alt="Sebastian Ballen's Profile Photo"
-              id="profile-pic"
+              id="profile-img"
             />
             <p>
               Hi! My name is Sebastian Ballen and I'm a web developer with
@@ -130,25 +132,19 @@
           </div>
         </div>
         <div class="row">
-          <div id="git-init">
-            <h3>💲 git init Self Proclamations:</h3>
-            <div class="git-proc">
+          <div class="col-md-12 git-section">
+            <h3>Self Proclamations:</h3>
+            <div class="col-sm-12 col-md-6 col-lg-6 git-proc">
               <div class="git-icon">
                 <i class="fas fa-code"></i>
               </div>
               <h5>Web Developer</h5>
             </div>
-            <div class="git-proc">
+            <div class="col-sm-12 col-md-6 col-lg-6 git-proc">
               <div class="git-icon">
                 <i class="fas fa-edit"></i>
               </div>
-              <h5>Digital Design Enthusiast</h5>
-            </div>
-            <div class="git-proc">
-              <div class="git-icon">
-                <i class="fas fa-basketball-ball"></i>
-              </div>
-              <h5>Point Guard (PG)</h5>
+              <h5>Digital Design Habitué</h5>
             </div>
           </div>
         </div>

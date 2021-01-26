@@ -1,0 +1,710 @@
+:root {
+  --animate-duration: 2s;
+  --animate-delay: 0.9s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2a628f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0 0 25px;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 6% 10%;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #000;
+  padding: 0px 10px;
+}
+
+.navbar i {
+  color: #3e92cc;
+  font-size: 2rem;
+}
+
+.navbar-brand {
+  font-family: "Sanchez", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 55px;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+
+.navbar-nav {
+  margin-right: 15px;
+}
+
+.nav-item {
+  padding: 0px 10px;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Transparent Navbar */
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #3e92cc;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #3e92cc;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #13293d;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #fff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #fff;
+}
+
+.navbar.active .fas.fa-bars {
+  color: #fff;
+}
+
+/* Title */
+
+.title-section {
+  background-image: url("../images/manhattan_bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.title-section .container-fluid {
+  padding: 20% 10% 0%;
+}
+
+.main-title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0 0 30px;
+}
+
+.main-subtitle {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.title-icon {
+  padding: 10px 15px;
+  color: #aaa;
+  margin-top: 19.5%;
+}
+
+/* About */
+.about-section p {
+  max-width: 770px;
+  margin: 30px auto;
+  padding-bottom: 40px;
+}
+
+.about-section a {
+  color: #3e92cc;
+}
+
+#profile-img {
+  border-radius: 50%;
+  width: 170px;
+}
+
+.git-section {
+  background: #f0f0f0;
+  color: #555;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 770px;
+  padding: 20px;
+  text-align: center;
+  width: 72%;
+}
+
+.git-section h3 {
+  color: #2a628f;
+}
+
+.git-proc {
+  width: 30%;
+  display: inline-block;
+}
+
+.git-proc h5 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.git-icon {
+  font-size: 45px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 10px;
+  width: 50px;
+}
+
+/* Services */
+
+.service-section {
+  background-color: #f0f0f0;
+}
+
+.service-section p {
+  margin: 0px auto 40px auto;
+  max-width: 80%;
+}
+
+.icons {
+  background: #13293d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 55px;
+  height: auto;
+  line-height: 175px;
+  margin: 0 auto 40px;
+  max-width: 100%;
+  width: 175px;
+}
+
+/* Experience */
+
+.experience-section p {
+  margin: 0px 10% 25px;
+}
+
+.tech-row h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 50px;
+}
+
+.tech-icon {
+  padding: 15px;
+}
+
+.responsive-img {
+  filter: grayscale(100%);
+  width: 100px;
+}
+
+.responsive-img:hover {
+  filter: none;
+}
+
+#jQuery .responsive-img {
+  height: 100px;
+}
+
+.job-row {
+  margin: 0px 0px 15% 0px;
+  padding: 25px;
+}
+
+.job-row img {
+  margin: 0 auto 10px;
+  width: 150px;
+}
+
+.job-row #DaVinci {
+  width: 200px;
+}
+/* resume */
+.resume-section {
+  background-color: #000;
+  background-image: url("../images/outdoor-office-desk-laptop.jpg");
+  background-position: center;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.resume-section .container-fluid {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.73) 17%,
+    rgba(0, 0, 0, 0.66) 35%,
+    rgba(0, 0, 0, 0.55) 62%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.resume-section h2 {
+  color: #fff;
+}
+
+.resume-btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Portfolio */
+.portfolio-section h2 {
+  margin-bottom: 10px;
+}
+
+.portfolio-section h5 {
+  font-size: 14px;
+  margin-bottom: 40px;
+  text-transform: lowercase;
+}
+
+.portfolio-item-wrapper {
+  margin: 5px 0px 25px;
+
+}
+
+.portfolio-item {
+  box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+/* Portfolio Modals */
+.modal-header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px;
+}
+
+.close {
+  margin-top: -15px;
+}
+
+.modal-title {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.modal-title-description {
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 0px -5px 0px;
+}
+
+.modal-body img {
+  max-width: 100%;
+}
+
+.modal-description {
+  font-size: 15px;
+  margin: 0 25px;
+}
+
+.visit {
+  margin-top: 50px;
+}
+
+#visit-btn {
+  color: #18435A;
+  border: 2px solid #18435A;
+  font-weight: 400;
+  margin: 40px 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.modal-footer {
+  background-color: #f0f0f0;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: right;
+}
+
+.modal-footer .btn-default {
+  color: #18435A;
+  background-color: #fff;
+  border-color: #18435A;
+}
+
+/* Contact */
+
+.contact-section {
+  background-color: #f0f0f0;
+}
+
+.contact-section .container-fluid {
+  padding: 1% 4%;
+}
+
+.email-icon {
+  color: #18435a;
+  font-size: 55px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto 10px;
+}
+
+.contact-section h2 {
+  color: #18435a;
+}
+
+.contact-section p {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#email-button {
+  padding: 12px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#email-btn {
+  border: 2px solid #18435a;
+  color: #18435a;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #16324f;
+  color: #fff;
+}
+
+footer .container-fluid {
+  padding: 2% 5% 2%;
+}
+
+.inline-list {
+  display: inline-flex;
+  list-style: none;
+  padding: 5px;
+}
+
+.inline-list > li {
+  padding: 0px 5px;
+}
+
+ul.social-buttons li a {
+  background: #13293d;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-size: 30px;
+  line-height: 70px;
+  width: 70px;
+}
+
+#saturn-v {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  margin: 10px auto 0px;
+  padding: 5px;
+  transform: rotate(-90deg);
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 10px 0px;
+  padding: 1%;
+}
+
+.copyright p {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/* Animations */
+
+.animate__animated .animate__fadeInDown .animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .title-icon {
+    margin-top: 37.5%;
+  }
+}
+
+/*                                TABLET SIZE                                 */
+
+@media (max-width: 768px) {
+  .title-section {
+    height: 576px;
+  }
+
+  .title-icon {
+    margin-top: 30%;
+  }
+
+  .git-section {
+    height: auto;
+    width: auto;
+  }
+
+  .git-proc {
+    width: 100%;
+  }
+
+  .git-icon {
+    margin: 15px 35% 15px;
+    width: 70px;
+  }
+
+  .fa-edit {
+    margin-left: 10%;
+  }
+
+  .tech-row h3 {
+    font-size: 16px;
+    margin: 0 0 30px;
+  }
+
+  .job-row img {
+    width: 100px;
+  }
+
+  .job-row #DaVinci {
+    width: 150px;
+  }
+
+  .resume-section {
+    background-position: center;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .portfolio-item img {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 678px) {
+  .title-section .container-fluid {
+    padding: 20% 10% 0%;
+  }
+
+  .main-title {
+    font-size: 50px;
+  }
+
+  .main-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-section .container-fluid {
+    padding: 20% 10% 0%;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-subtitle {
+    font-size: 16px;
+  }
+
+  .title-icon {
+    margin-top: 15%;
+  }
+}
+
+/*                                  MOBILE SCREEN L                                    */
+
+@media (max-width: 425px) {
+  .title-section {
+    height: 319px;
+  }
+
+  .title-section .container-fluid {
+    padding: 15% 10% 0%;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-subtitle {
+    font-size: 16px;
+  }
+
+  #profile-img {
+    width: 120px;
+  }
+
+  .icons {
+    font-size: 45px;
+    line-height: 100px;
+    width: 100px;
+  }
+
+  .tech-row h3 {
+    font-size: 16px;
+    margin: 30px 0 20px;
+  }
+
+  .job-row {
+    margin: 0px 0px 5% 0px;
+  }
+
+  .resume-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+
+  .resume-section h2 {
+    font-size: 28px;
+  }
+
+  .portfolio-item-wrapper {
+    width: 100%;
+  }
+}
+
+/*                                  MOBILE SCREENS M                                   */
+
+@media (max-width: 375px) {
+  .title-section {
+    height: 281px;
+  }
+
+  .main-title {
+    font-size: 20px;
+  }
+
+  .main-subtitle {
+    font-size: 12px;
+  }
+
+  .title-icon {
+    font-size: 3rem !important;
+    margin-top: 19%;
+  }
+
+  .portfolio-item-wrapper {
+    width: 100%;
+  }
+}
+
+/*                                MOBILE SCREEN S                                     */
+
+@media (max-width: 320px) {
+  .title-section {
+    height: 240px;
+  }
+
+  .title-section .container-fluid {
+    padding: 5% 5% 0%;
+  }
+
+  .main-title {
+    font-size: 16px;
+  }
+
+  .main-subtitle {
+    font-size: 12px;
+  }
+
+  .title-icon {
+    font-size: 2rem !important;
+    margin-top: 27%;
+  }
+  
+  .portfolio-item-wrapper {
+    width: 100%;
+  }
+  
+  .visit {
+    font-size: 14px;
+  }
+}

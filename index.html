@@ -6,11 +6,8 @@
     <title>Sebastian Ballen | Web Developer & Digital Design Enthusiast</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Sanchez&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Sanchez&display=swap" rel="stylesheet">
 
     <!-- CSS Stylesheets & Bootstrap-->
     <link
@@ -47,6 +44,7 @@
     <script src="index.js"></script>
   </head>
   <body>
+    <section id="top"></section>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <a class="navbar-brand" href="#">
@@ -251,7 +249,7 @@
           <div class="col-md-12 col-lg-12">
             <h2>Check out my résumé</h2>
             <div id="resume-button">
-              <a class="resume-btn" href="" target="_blank">Grab a copy</a>
+              <a class="resume-btn animate__pulse" href="" target="_blank">Grab a copy</a>
             </div>
           </div>
         </div>
@@ -268,25 +266,53 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
-            <div class="portfolio-item"  data-toggle="modal" href="#Modal1">
+            <div class="portfolio-item" data-toggle="modal" href="#Project1">
+              <img src="images/tindog.png" alt="Project1 Screenshot">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
+            <div class="portfolio-item"  data-toggle="modal" href="#TindogModal">
               <img src="images/tindog.png" alt="Tindog Screenshot">
             </div>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
-            <div class="portfolio-item" data-toggle="modal">
-              <img src="images/tindog.png" alt="Project2 Screenshot">
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
-            <div class="portfolio-item" data-toggle="modal">
-              <img src="images/tindog.png" alt="Project3 Screenshot">
+            <div class="portfolio-item" data-toggle="modal" href="#ProfileCardModal">
+              <img src="images/FrontMentor1.png" alt="FrondMentor1 Screenshot">
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Portfolio Modals -->
-    <div class="modal" tabindex="-1" id="Modal1">
+    <div class="modal" tabindex="-1" id="Project1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="col-lg-12">
+              <h4 class="modal-title">Lorem ipsum dolor sit amet</h4>
+              <h6 class="modal-title-description">Lorem ipsum dolor sit amet consectetur</h6>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>
+              <img src="images/tindog.png" alt="Tindog Screenshot">
+            </p>
+            <p class="modal-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+            <p class="visit">
+              <a id="visit-btn" href="" target="_blank">Visit Site</a>
+              or
+              <a id="visit-btn" href="" target="_blank">Visit Source</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" tabindex="-1" id="TindogModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -306,6 +332,32 @@
               <a id="visit-btn" href="" target="_blank">Visit Site</a>
               or
               <a id="visit-btn" href="" target="_blank">Visit Source</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" tabindex="-1" id="ProfileCardModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="col-lg-12">
+              <h4 class="modal-title">Frontend Mentor: Profile Card Component</h4>
+              <h6 class="modal-title-description">Website</h6>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>
+              <img src="images/FrontMentor1.png" alt="Prof Card Screenshot">
+            </p>
+            <p class="modal-description">Profile Card Component is a challenge from Frontend Mentor. The challenge was made specially to test your layout skills. A great exercise to practice & learn this ability to recreate the design into the website. Pixel-perfect if possible. HTML 5, CSS 3 & CSS Grid was used to complete the challenge.</p>
+            <p class="visit">
+              <a id="visit-btn" href="https://www.frontendmentor.io/solutions/profile-card-component-using-css-grids--9AzgtFRs" target="_blank">Visit Site</a>
+              or
+              <a id="visit-btn" href="https://github.com/SebastianBC09/Profile-Card-Component" target="_blank">Visit Source</a>
             </p>
           </div>
           <div class="modal-footer">
@@ -355,10 +407,10 @@
             </ul>
           </div>
           <div class="col-md-12 col-lg-12">
-            <a id="go-up" href="#title">
+            <a id="go-up" href="#top">
               <i class="fas fa-space-shuttle rocket" id="saturn-v"></i>
             </a>
-            <!-- <p>Born, baby born!</p> -->
+            <!--             <p id="go-up-copy">Born, baby born!</p> -->
           </div>
           <div class="col-lg-12 copyright">
             <p>

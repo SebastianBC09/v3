@@ -318,6 +318,20 @@ p {
   letter-spacing: 1px;
   padding: 10px 20px;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+  color: #fff;
+  border: 2px solid #ccc;
+  background-color: rgba(254, 254, 254, 0.2);
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Portfolio */
@@ -333,7 +347,6 @@ p {
 
 .portfolio-item-wrapper {
   margin: 5px 0px 25px;
-
 }
 
 .portfolio-item {
@@ -386,8 +399,8 @@ p {
 }
 
 #visit-btn {
-  color: #18435A;
-  border: 2px solid #18435A;
+  color: #18435a;
+  border: 2px solid #18435a;
   font-weight: 400;
   margin: 40px 10px;
   text-decoration: none;
@@ -402,9 +415,9 @@ p {
 }
 
 .modal-footer .btn-default {
-  color: #18435A;
+  color: #18435a;
   background-color: #fff;
-  border-color: #18435A;
+  border-color: #18435a;
 }
 
 /* Contact */
@@ -446,6 +459,13 @@ p {
   font-size: 20px;
   padding: 10px 20px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#email-btn:hover {
+  color: #fff;
+  background: #13293d;
+  border: 2px solid #13293d;
 }
 
 /* Footer */
@@ -475,7 +495,22 @@ ul.social-buttons li a {
   display: block;
   font-size: 30px;
   line-height: 70px;
+  transition: all 0.3s;
   width: 70px;
+}
+
+ul.social-buttons li a:hover {
+  color: #fff;
+  box-shadow: 1px 1px 3px #333;
+  transform: scale(1.1);
+}
+
+#github:hover {
+  background-color: #4183c4;
+}
+
+#linkedin:hover {
+  background-color: #0077b5;
 }
 
 #saturn-v {
@@ -484,6 +519,26 @@ ul.social-buttons li a {
   margin: 10px auto 0px;
   padding: 5px;
   transform: rotate(-90deg);
+}
+
+#go-up {
+  transition: all 0.5s;
+}
+
+#go-up:hover {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+#go-up-copy {
+  opacity: 0;
+}
+
+#go-up-copy:hover {
+  font-size: 12px;
+  margin: 0 auto;
+  opacity: 1;
 }
 
 .copyright {
@@ -699,11 +754,11 @@ ul.social-buttons li a {
     font-size: 2rem !important;
     margin-top: 27%;
   }
-  
+
   .portfolio-item-wrapper {
     width: 100%;
   }
-  
+
   .visit {
     font-size: 14px;
   }

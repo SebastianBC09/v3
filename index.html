@@ -253,6 +253,11 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
+            <div class="portfolio-item" data-toggle="modal" href="#TheSimonGameModal">
+              <img src="images/Simon Screenshot.png" alt="Simon game Screenshot" id="Simon-img">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 portfolio-item-wrapper">
             <div class="portfolio-item" data-toggle="modal" href="#DrumKitModal">
               <img src="images/Drum Kit Screenshot.png" alt="Drum Kit Screenshot">
             </div>
@@ -275,15 +280,41 @@
         </div>
       </div>
     </section>
-    <!-- Portfolio Modals -->
-    
+    <!--                                  Portfolio Modals                                  -->
+    <!-- The Simon Game -->
+    <div class="modal" tabindex="-1" id="TheSimonGameModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="col-lg-12">
+              <h4 class="modal-title">The Simon Game Challenge</h4>
+              <h6 class="modal-title-description">JavaScript & jQuery Game</h6>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p><img src="images/Simon Screenshot.png" alt="The Simon Game Screenshot"></p>
+            <p class="modal-description">
+              The Simon Game is a JavaScript & jQuery game. For this challenge, all the intermediate-advanced concepts are applied, plus the use & understanding of one of the most popular & easy libraries of JavaScript. The game is mostly made with JS functions & the use of jQuery shorthands (like $( ) for event listeners). It's one of the easiest games to play but also quite challenging to create.
+            </p>
+            <p class="visit">
+              <a id="visit-btn" href="https://sebastianbc09.github.io/The-Simon-Game/" target="_blank">Visit Site</a>
+              or
+              <a id="visit-btn" href="https://github.com/SebastianBC09/The-Simon-Game" target="_blank">Visit Source</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Drum Kit -->
     <div class="modal" tabindex="-1" id="DrumKitModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <div class="col-lg-12">
-              <h4 class="modal-title">Drum Kit Project</h4>
+              <h4 class="modal-title">Drum Kit</h4>
               <h6 class="modal-title-description">JavaScript Interactive Site</h6>
             </div>
           </div>
@@ -442,6 +473,7 @@
         </div>
       </div>
     </footer>
+
     <!-- JS & jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

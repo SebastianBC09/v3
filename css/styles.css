@@ -363,6 +363,10 @@ p {
   width: 100%;
 }
 
+#Simon-img {
+ height: 165px;
+}
+
 /* Portfolio Modals */
 .modal-header {
   background-color: #f0f0f0;
